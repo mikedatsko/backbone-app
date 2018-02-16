@@ -131,4 +131,6 @@ $(function () {
   'use strict';
   console.log('app:', app);
   new app.AppView();
+
+  window.parent.postMessage('FRAME_LOADED','https://jsmeasure.herokuapp.com');
 });
